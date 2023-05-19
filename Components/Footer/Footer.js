@@ -20,7 +20,7 @@ const Footer = () => {
 
                     <div className="mt-6 lg:max-w-sm">
                         <div>
-                            <p className='text-6xl  font-semibold text-white'>Join our team of expert professionals</p>
+                            <p className='text-3xl md:text-6xl  font-semibold text-white'>Join our team of expert professionals</p>
                             <button class="bg-white text-black active:bg-white hover:bg-[black] hover:text-white mt-10 font-bold text-sm px-8 py-4 mb-10 md:mb-0 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">View Location</button>
                         </div>
 
