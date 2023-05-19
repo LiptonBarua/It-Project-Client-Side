@@ -9,7 +9,7 @@ const Header = () => {
   const navitem = (
     <>
       <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Home</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>About Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='hover:underline underline-offset-4 decoration-2 decoration-white'>About Us</Link></li>
       <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Blogs</Link></li>
       <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Career</Link></li>
       <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Contact Us</Link></li>
@@ -45,7 +45,7 @@ const Header = () => {
           </label>
           {
             drop && (
-              <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact dropdown-content mt-12 px-2 shadow bg-gradient-to-r from-[#f5f0ef] via-[#fcfafa] to-[#f9f8f7] w-52">
+              <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact dropdown-content mt-6 md:mt-12 px-2 shadow bg-gradient-to-r from-[#f5f0ef] via-[#fcfafa] to-[#f9f8f77c] w-52">
                 {navitem}
               </ul>
             )
