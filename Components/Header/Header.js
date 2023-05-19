@@ -16,7 +16,7 @@ const Header = () => {
     </>
   )
   return (
-   <div className='fixed bg-gradient-to-r from-[#f5f0ef] via-[#fcfafa] to-[#f9f8f7]  dark:bg-dark bg-opacity-30 shadow-md  z-50 w-full bg-white py-6 px-[20px] md:px-[80px]  right-0 top-0'>
+   <div className='fixed bg-gradient-to-r from-[#f5f0ef] via-[#fcfafa] to-[#f9f8f77c]  dark:bg-dark bg-opacity-30 shadow-md  z-50 w-full bg-white py-6 px-[20px] md:px-[80px]  right-0 top-0'>
      <div className=" flex justify-between">
       <div className="navbar-start">
 

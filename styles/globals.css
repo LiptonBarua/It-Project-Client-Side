@@ -74,3 +74,47 @@ spinner {
 /* .owl-stage{
 transform: translate3d(-6580px, 0px, 0px); transition: all 0s ease 0s;
 } */
+
+
+.p-3svg {
+  background: #C60017;
+  height: 175px;
+  width: 175px;
+  /* position: absolute; */
+  border-radius: 100%;
+  top: 260px;
+  right: 120px;
+  padding: 42px;
+  transition: all ease-in-out .5s;
+  -webkit-transition: all ease-in-out .5s;
+}
+.p-3svg:hover{
+  background-color: black;
+}
+
+.p-3svg svg {
+  width: 85px;
+  height: 85px;
+  fill: #fff;
+}
+.p-4svg {
+  background: black;
+  height: 175px;
+  width: 175px;
+  /* position: absolute; */
+  border-radius: 100%;
+  top: 260px;
+  right: 120px;
+  padding: 42px;
+  transition: all ease-in-out .5s;
+  -webkit-transition: all ease-in-out .5s;
+}
+.p-4svg:hover{
+  background-color: #7c0211;
+}
+
+.p-4svg svg {
+  width: 85px;
+  height: 85px;
+  fill: #fff;
+}

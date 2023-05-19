@@ -5,7 +5,7 @@ const Banner = () => {
         <div className="bg-[#c4d1c4] flex md:pl-[65px] bg-white" style={{height:`600px`}}>
         <div className="flex items-center px-8 md:px-12 lg:w-1/2">
             <div>
-                <h2 className="text-3xl font-semibold text-black md:text-6xl">Stay ahead of your competition with our expert IT support</h2>
+                <h2 className="text-3xl font-semibold text-black md:text-6xl">Stay ahead of your competition with our expert IT <span className='text-[#C60017]'>support</span></h2>
 
               
             </div>
