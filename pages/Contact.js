@@ -1,5 +1,7 @@
 import ContactBanner from '@/Components/ContactPage/ContactBanner/ContactBanner';
 import ContactCard from '@/Components/ContactPage/ContactCard/ContactCard';
+import ContactMap from '@/Components/ContactPage/ContactMap/ContactMap';
+import Practice from '@/Components/ContactPage/Practice/Practice';
 import React from 'react';
 
 const Contact = () => {
@@ -7,6 +9,8 @@ const Contact = () => {
         <div>
             <ContactBanner></ContactBanner>
             <ContactCard></ContactCard>
+            <ContactMap></ContactMap>
+            <Practice></Practice>
         </div>
     );
 };
