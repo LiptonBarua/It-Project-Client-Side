@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Solutions = () => {
@@ -6,10 +7,7 @@ const Solutions = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white">
                 <div>
                     <h1 className='text-3xl md:text-6xl font-bold'>The solutions we design The solutions you need</h1>
-                    <button class="bg-white text-black active:bg-white hover:bg-black hover:text-white mt-10 font-bold text-sm px-8 py-4 mb-10 md:mb-0 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
-                    >
-                        Explore More
-                    </button>
+                    <Link href='/About'><button class="bg-white text-black active:bg-white hover:bg-black hover:text-white mt-10 font-bold text-sm px-8 py-4 mb-10 md:mb-0 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Explore More</button></Link>
                 </div>
                 <div className='md:ml-5'>
                     <p className='text-justify mb-3'>IT Solutions acts as a trusted service partner for different industries offering high-quality IT infrastructure services. We provide telecom solutions, telecom products, IT solutions, IT support, website solutions, ELV and security, audio-visual solutions, hardware services, software solutions.</p>

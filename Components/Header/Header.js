@@ -8,15 +8,15 @@ const Header = () => {
 
   const navitem = (
     <>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Home</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='hover:underline underline-offset-4 decoration-2 decoration-white'>About Us</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Blogs</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Career</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white'>Contact Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Home</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>About Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Blogs</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Career</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Contact Us</Link></li>
     </>
   )
   return (
-   <div className='fixed bg-gradient-to-r from-[#f5f0ef] via-[#fcfafa] to-[#f9f8f77c]  dark:bg-dark bg-opacity-30 shadow-md  z-50 w-full bg-white py-6 px-[20px] md:px-[80px]  right-0 top-0'>
+   <div className='fixed bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef]  dark:bg-dark bg-opacity-30 shadow-md  z-50 w-full bg-white py-6 px-[20px] md:px-[80px]  right-0 top-0'>
      <div className=" flex justify-between">
       <div className="navbar-start">
 
@@ -45,7 +45,7 @@ const Header = () => {
           </label>
           {
             drop && (
-              <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact dropdown-content mt-6 md:mt-12 px-2 shadow bg-gradient-to-r from-[#f5f0ef] via-[#fcfafa] to-[#f9f8f77c] w-52">
+              <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact dropdown-content mt-6 md:mt-12 px-2 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-52">
                 {navitem}
               </ul>
             )

@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogBanner = () => {
     return (
-        <div className="banner bg-[#c4d1c4] flex md:pl-[65px] bg-white" style={{ height: `600px` }}>
+        <div className="banner  pt-24 bg-[#c4d1c4] flex md:pl-[65px] bg-white" style={{ height: `600px` }}>
         <div className="flex items-center px-8 md:px-12 lg:w-1/2">
             <div>
                 <h2 className="text-3xl font-bold text-black md:text-6xl">BLOG</h2>
