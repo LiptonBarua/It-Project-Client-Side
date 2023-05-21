@@ -20,7 +20,7 @@ const BlogData = ({ blog }) => {
                     <div className="relative">
                         <div className="-mt-12">
                             <div className="translate-y-2 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                                <button class="bg-[#C40017] text-white active:bg-pink-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none  mb-1 ease-linear transition-all duration-150" type="button">20 May 2023</button>
+                                <button className="bg-[#C40017] text-white active:bg-pink-600 font-bold uppercase text-base px-8 py-3 rounded shadow-md hover:shadow-lg outline-none focus:outline-none  mb-1 ease-linear transition-all duration-150" type="button">20 May 2023</button>
                             </div>
                         </div>
                     </div>

@@ -5,37 +5,37 @@ const BlogCard = () => {
     const blogCard=[
         {
             id: '1',
-            img: 'https://www.itsolutions.ae/images/blog1.jpg',
+            img: 'https://c1.wallpaperflare.com/preview/707/281/168/caucasian-female-woman-office.jpg',
             title: 'Lorem ipsum dolor',
             details: 'Environmentalists, corporate executives, academics policy and the cost curves.'
         },
         {
             id: '2',
-            img: 'https://www.itsolutions.ae/images/blog1.jpg',
+            img: 'https://c1.wallpaperflare.com/preview/707/281/168/caucasian-female-woman-office.jpg',
             title: 'Lorem ipsum dolor',
             details: 'Environmentalists, corporate executives, academics policy and the cost curves.'
         },
         {
             id: '3',
-            img: 'https://www.itsolutions.ae/images/blog1.jpg',
+            img: 'https://c1.wallpaperflare.com/preview/707/281/168/caucasian-female-woman-office.jpg',
             title: 'Lorem ipsum dolor',
             details: 'Environmentalists, corporate executives, academics policy and the cost curves.'
         },
         {
             id: '4',
-            img: 'https://www.itsolutions.ae/images/blog1.jpg',
+            img: 'https://c1.wallpaperflare.com/preview/707/281/168/caucasian-female-woman-office.jpg',
             title: 'Lorem ipsum dolor',
             details: 'Environmentalists, corporate executives, academics policy and the cost curves.'
         },
         {
             id: '5',
-            img: 'https://www.itsolutions.ae/images/blog1.jpg',
+            img: 'https://c1.wallpaperflare.com/preview/707/281/168/caucasian-female-woman-office.jpg',
             title: 'Lorem ipsum dolor',
             details: 'Environmentalists, corporate executives, academics policy and the cost curves.'
         },
         {
             id: '6',
-            img: 'https://www.itsolutions.ae/images/blog1.jpg',
+            img: 'https://c1.wallpaperflare.com/preview/707/281/168/caucasian-female-woman-office.jpg',
             title: 'Lorem ipsum dolor',
             details: 'Environmentalists, corporate executives, academics policy and the cost curves.'
         },

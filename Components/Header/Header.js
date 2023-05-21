@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import { HiMenu} from "react-icons/hi";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(true);
@@ -8,11 +9,13 @@ const Header = () => {
 
   const navitem = (
     <>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Home</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>About Us</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Blogs</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Career</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='hover:underline underline-offset-4 decoration-2 decoration-white hover:text-[#C40017]'>Contact Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>Home</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>About Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>Blogs</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>Career</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>Contact Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Login' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>Login</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Register' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-20 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{transitionDuration: `6s`}}>Register</Link></li>
     </>
   )
   return (
@@ -33,9 +36,7 @@ const Header = () => {
             <div className='flex items-center'>
               <h1 className='mr-2 font-bold text-black'>menu</h1>
               {
-                navbar ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#CD373E] font-bold">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-bold">
+                navbar ? <HiMenu className="text-[#C60017] w-8 h-8 text-bold"></HiMenu>: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-bold">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
 
@@ -45,7 +46,8 @@ const Header = () => {
           </label>
           {
             drop && (
-              <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact dropdown-content mt-6 md:mt-12 px-2 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-52">
+              
+              <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact dropdown-content mt-8 md:mt-12 px-2 pb-3 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-52">
                 {navitem}
               </ul>
             )
