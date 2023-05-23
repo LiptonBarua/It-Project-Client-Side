@@ -62,11 +62,11 @@ const ProfileEdit = () => {
     
     return (
         <div>
-            <div className="h-auto md:h-[550px] flex justify-center">
-                <div className="bg-white shadow-lg m-8 w-3/4 lg:w-2/3 grid lg:flex rounded-t-2xl">
-                    <div className="lg:w-1/3 bg-[#C60017] rounded-xl ">
-                        <div className="text-white m-6 font-medium "></div>
-                        <div className="flex items-center justify-center ">
+            <div className="px-[20px] lg:px-0 h-auto lg:h-[550px] flex lg:justify-center">
+                <div className="bg-white shadow-lg  lg:m-8 w-full lg:w-2/3 grid lg:flex lg:rounded-xl">
+                    <div className="h-[450px] lg:h-auto lg:w-1/3 bg-[#C60017] lg:rounded-l-lg">
+                        <div className="text-white lg:m-6 font-medium "></div>
+                        <div className="flex items-center justify-center mt-6 lg:mt-0">
                             <div>
                                 <img src={userProfile[0]?.image} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
                                 <h1 className='font-semibold text-2xl text-white'>{userProfile[0]?.firstName} {userProfile[0]?.lastName}</h1>
@@ -105,8 +105,8 @@ const ProfileEdit = () => {
         </div> */}
 
                     </div>
-                    <div className="w-full lg:w-2/3 ">
-                        <div className="text-lg font-medium text-blue-900 m-6 ">Profile Information</div>
+                    <div className="lg:w-2/3 ">
+                        <div className="text-lg font-bold text-black m-6 ">Profile Information</div>
 
                        <form action="" onSubmit={handleSubmit(handleProfileEdit)}>
                        <div className=" flex lg:flex-row flex-col">

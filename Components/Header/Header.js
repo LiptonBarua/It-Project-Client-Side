@@ -38,8 +38,8 @@ const Header = () => {
   
       <li onClick={() => setNavbar(!navbar)}><Link href='/' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Home</Link></li>
       <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>About Us</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Blogs</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Career</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Blog</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>My Information</Link></li>
       <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Contact Us</Link></li>
 
       {

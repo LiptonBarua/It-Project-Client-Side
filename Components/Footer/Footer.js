@@ -9,7 +9,7 @@ const Footer = () => {
         <li><Link href='/' className=' hover:text-[black]'>Home</Link></li>
         <li><Link href='/About' className=' hover:text-[black]'>About Us</Link></li>
         <li><Link href='/Blog' className=' hover:text-[black]'>Blogs</Link></li>
-        <li><Link href='/Career' className=' hover:text-[black]'>Career</Link></li>
+        <li><Link href='/Career' className=' hover:text-[black]'>My Information</Link></li>
         <li><Link href='/Contact' className=' hover:text-[black]'>Contact Us</Link></li>
         <li><Link href='/Profile' className=' hover:text-[black]'>My Profile</Link></li>
       </>
