@@ -1,5 +1,6 @@
 import BlogBanner from '@/Components/BlogPage/BlogBanner/BlogBanner';
 import BlogCard from '@/Components/BlogPage/BlogCard/BlogCard';
+import { PrivateRoute } from '@/Components/PrivateRoute/PrivateRoute';
 import React from 'react';
 
 const Blog = () => {
@@ -11,4 +12,4 @@ const Blog = () => {
     );
 };
 
-export default Blog;
+export default PrivateRoute(Blog);
