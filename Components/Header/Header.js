@@ -10,7 +10,7 @@ const Header = () => {
   const { user, logOut } = useContext(AuthContext);
   const { userProfile } = useContext(ShareContext)
 
-  console.log(userProfile[0]?.image)
+ 
   const handleLogOut = () => {
     logOut()
       .then(() => { })
@@ -36,18 +36,18 @@ const Header = () => {
           : ''
       }
   
-      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Home</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>About Us</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Blogs</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Career</Link></li>
-      <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Contact Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Home</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/About' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>About Us</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Blog' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Blogs</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Career' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Career</Link></li>
+      <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Contact Us</Link></li>
 
       {
-        user?.email ? <li onClick={handleLogOut}><Link href='' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Log Out</Link></li>
+        user?.email ? <li onClick={handleLogOut}><Link href='' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Log Out</Link></li>
           :
           <>
-            <li onClick={() => setNavbar(!navbar)}><Link href='/Login' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Login</Link></li>
-            <li onClick={() => setNavbar(!navbar)}><Link href='/Register' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-36 before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Register</Link></li>
+            <li onClick={() => setNavbar(!navbar)}><Link href='/Login' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Login</Link></li>
+            <li onClick={() => setNavbar(!navbar)}><Link href='/Register' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Register</Link></li>
           </>
       }
 
@@ -64,7 +64,10 @@ const Header = () => {
         <div className='flex'>
           <div className='hidden md:block mr-10'>
             <h1>Call Us</h1>
-            <h1 className='font-semibold'>+971 52688 7111</h1>
+            {
+              userProfile[0]?.phone ? <h1 className='font-semibold'>{userProfile[0]?.phone}</h1> : <h1 className='font-semibold'>+8801852405780</h1>
+            }
+
           </div>
           <div className="dropdown">
             <label onClick={() => { setDrop(!drop); setNavbar(!navbar) }} tabIndex={0} className="">
@@ -82,7 +85,7 @@ const Header = () => {
           
             {
               drop && (
-                <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact -right-24 dropdown-content mt-6 md:mt-12 pb-3 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-64">
+                <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact -right-24 dropdown-content mt-6 md:mt-12 pb-5 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-60">
                 {navitem}
               </ul>
                

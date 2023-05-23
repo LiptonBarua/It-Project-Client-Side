@@ -25,7 +25,7 @@ const ContactCard = () => {
                     <h1><CgPhone className=' mx-auto w-14 h-14 text-white hover:text-black'></CgPhone></h1>
                     <div className='text-white'>
                     <h2 className='text-2xl font-bold mb-3'>Phone</h2>
-                    <p>+971 52688 7111</p>
+                    <p>+8801852405780</p>
                     </div>
                 </div>
             </div>
