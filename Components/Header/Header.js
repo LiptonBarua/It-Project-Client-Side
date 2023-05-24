@@ -43,7 +43,7 @@ const Header = () => {
       <li onClick={() => setNavbar(!navbar)}><Link href='/Contact' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Contact Us</Link></li>
 
       {
-        user?.email ? <li onClick={handleLogOut}><Link href='' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Log Out</Link></li>
+        user?.email ? <li onClick={()=>{handleLogOut(); setNavbar(!navbar)}}><Link href='' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Log Out</Link></li>
           :
           <>
             <li onClick={() => setNavbar(!navbar)}><Link href='/Login' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Login</Link></li>
@@ -71,10 +71,12 @@ const Header = () => {
           </div>
           <div className="dropdown">
             <label onClick={() => { setDrop(!drop); setNavbar(!navbar) }} tabIndex={0} className="">
-              <div className='flex items-center'>
+              <div onClick={()=>setNavbar(!navbar)} className='flex items-center'>
                 <h1 className='mr-2 font-bold text-black'>menu</h1>
+
+                
                 {
-                  navbar ? <HiMenu className="text-[#C60017] w-8 h-8 text-bold"></HiMenu> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-bold">
+                  navbar ? <HiMenu onClick={() => setDrop(!drop)} className="text-[#C60017] w-8 h-8 text-bold"></HiMenu> : <svg onClick={() => setDrop(!drop)} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-bold">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
 
@@ -85,7 +87,7 @@ const Header = () => {
           
             {
               drop && (
-                <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact -right-24 dropdown-content mt-6 md:mt-12 pb-5 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-60">
+                <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact -right-10 md:-right-24 dropdown-content mt-6 md:mt-12 pb-5 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-60">
                 {navitem}
               </ul>
                

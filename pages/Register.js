@@ -56,7 +56,7 @@ const Register = () => {
         const saveUser = (firstName, lastName, email, image) => {
             const user = {firstName, lastName, email, image, date}
 
-            fetch(' https://it-project-server-side.vercel.app/users', {
+            fetch('https://it-project-server-side.vercel.app/users', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',

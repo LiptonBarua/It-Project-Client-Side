@@ -1,6 +1,5 @@
 import { PrivateRoute } from '@/Components/PrivateRoute/PrivateRoute';
 import ProfileEdit from '@/Components/ProfilePage/ProfileEdit/ProfileEdit';
-import ProfilePage from '@/Components/ProfilePage/ProfilePage';
 import React from 'react';
 
 const Profile = () => {
