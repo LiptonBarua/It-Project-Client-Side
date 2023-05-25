@@ -9,8 +9,8 @@ import React from 'react';
 
 const Career = () => {
     return (
-        <div>
-            <CareerBanner></CareerBanner>
+        <div className='py-16'>
+            {/* <CareerBanner></CareerBanner> */}
             <div className='px-[20px] md:px-[52px]'>
             <CareerInformation></CareerInformation>
             </div>

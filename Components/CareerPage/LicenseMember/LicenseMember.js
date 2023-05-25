@@ -6,7 +6,7 @@ const LicenseMember = () => {
     const { licenseMemberInformation } = useContext(ShareContext);
 
     return (
-        <div className='px-[20px] md:px-[52px] py-24'>
+        <div className='px-[20px] md:px-[52px] py-14'>
 
             <div className='text-center w-1/2 ms-auto bg-[#840a2e] text-white py-2 text-xl font-semibold'>
                 <h1>License Members</h1>
@@ -16,7 +16,7 @@ const LicenseMember = () => {
                 <div className='hidden lg:block'>
 
                     <div className="relative overflow-x-auto shadow-md">
-                        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                        <table className="w-full text-sm text-left text-gray-900 dark:text-gray-400">
                             <thead className="text-xs text-white uppercase bg-[#340110] dark:bg-gray-700 dark:text-gray-400">
                                 <tr>
                                     <th scope="col" className="px-6 py-3">
@@ -42,7 +42,7 @@ const LicenseMember = () => {
                             <tbody>
                                 {
                                     licenseMemberInformation?.map((licenseMember, i) => <tr key={licenseMember._id} className="bg-[#e5dede]">
-                                        <th scope="row" className="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                        <th scope="row" className="px-6 py-4 font-medium text-black blackspace-nowrap dark:text-black">
                                             {licenseMember?.shar}
                                         </th>
                                         <td className="px-6 py-4">
@@ -79,7 +79,7 @@ const LicenseMember = () => {
 
                                     <tbody>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="bg-[#340110] px-6 w-20 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 font-medium text-white blackspace-nowrap dark:text-black">
                                                 Share
                                             </th>
                                             <td className="px-6 py-4">
@@ -87,7 +87,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="bg-[#340110] px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 font-medium text-white blackspace-nowrap dark:text-black">
                                                 Role
                                             </th>
                                             <td className="px-6 py-4">
@@ -95,7 +95,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="bg-[#340110] px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 font-medium text-white blackspace-nowrap dark:text-black">
                                                 Nationality
                                             </th>
                                             <td className="px-6 py-4">
@@ -103,7 +103,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="bg-[#340110] px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="w-20 w-20 bg-[#340110] px-6 py-4 font-medium text-white blackspace-nowrap dark:text-black">
                                                 Name
                                             </th>
                                             <td className="px-6 py-4">
@@ -111,7 +111,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="bg-[#340110] px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 font-medium text-white blackspace-nowrap dark:text-black">
                                                 No
                                             </th>
                                             <td className="px-6 py-4">
@@ -119,7 +119,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="bg-[#340110] px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 font-medium text-white blackspace-nowrap dark:text-black">
                                                 Action
                                             </th>
                                             <td className="px-6 py-4">
