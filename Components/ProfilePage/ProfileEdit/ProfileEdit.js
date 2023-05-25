@@ -6,8 +6,9 @@ import { toast } from 'react-toastify';
 
 const ProfileEdit = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const { userProfile } = useContext(ShareContext);
-    const{user}=useContext(AuthContext)
+    const { userProfile, refetch } = useContext(ShareContext);
+    const{user}=useContext(AuthContext);
+    
 
 
 
@@ -49,6 +50,7 @@ const ProfileEdit = () => {
          .then(data=>{
             toast.success('profile edit successfully')
             reset()
+            refetch()
          })
          .catch(error=>{
             toast.error('profile edit not a successfully')

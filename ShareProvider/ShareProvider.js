@@ -8,7 +8,7 @@ const ShareProvider = ({children}) => {
 const{user}=useContext(AuthContext)
 
 // .................User Information................
-const {data:userProfile=[]}=useQuery({
+const {data:userProfile=[], refetch}=useQuery({
 queryKey: ['userData', user?.email],
 queryFn: async()=>{
     const res= await fetch(` https://it-project-server-side.vercel.app/profile?email=${user?.email}`)
@@ -64,7 +64,7 @@ const{data:userAddress=[], refetch:addressRefetch}=useQuery({
         return data;
     }
 })
-    const shareInfo = {userProfile, userInformation, informationRefetch, userPersonalInformation, personalInformationRefetch, licenseMemberInformation, licenseMemberRefetch, userAddress, addressRefetch}
+    const shareInfo = {userProfile, refetch, userInformation, informationRefetch, userPersonalInformation, personalInformationRefetch, licenseMemberInformation, licenseMemberRefetch, userAddress, addressRefetch}
     return (
         <ShareContext.Provider value={shareInfo}>
             {children}
