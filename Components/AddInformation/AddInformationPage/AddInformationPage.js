@@ -1,10 +1,13 @@
 import { AuthContext } from '@/AuthProvider/AuthProvider';
+import { ShareContext } from '@/ShareProvider/ShareProvider';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const AddInformationPage = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const{user}=useContext(AuthContext)
+    const{user}=useContext(AuthContext);
+    const{personalInformationRefetch}=useContext(ShareContext)
 
     const handleInformation=(data)=>{
         const addInformatins={
@@ -19,7 +22,7 @@ const AddInformationPage = () => {
         }
 
         console.log(addInformatins)
-        fetch('https://it-project-server-side.vercel.app/information', {
+        fetch('https://it-project-server-side.vercel.app/personalInformation', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -28,11 +31,12 @@ const AddInformationPage = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            alert('information is a successfully');
+            toast.success('information is a successfully');
             reset();
+            personalInformationRefetch()
         })
         .catch(error=>{
-            alert('information is not a successfully')
+            toast.error('information is not a successfully')
         })
     }
 
@@ -99,8 +103,8 @@ const AddInformationPage = () => {
                     </div>
 
                     <div class="flex justify-end mt-6">
-                        <button type='submit' className="px-6 py-2 leading-5 text-black transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Submit</button>
-                    </div>
+                    <button type='submit' className="px-6 py-2 leading-5 transition-colors duration-200 transform bg-black rounded-md hover:bg-[#C60017] focus:outline-none text-white">Submit</button>
+                </div>
                 </form>
             </section>
 

@@ -1,10 +1,13 @@
 import { AuthContext } from '@/AuthProvider/AuthProvider';
+import { ShareContext } from '@/ShareProvider/ShareProvider';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
-const LicenseMemberPage = () => {
+const AddLicenseMemberPage = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
+    const{licenseMemberRefetch}=useContext(ShareContext)
 
     const handleLicenseMember = (data) => {
         const licenseMemberAdd = {
@@ -25,10 +28,12 @@ const LicenseMemberPage = () => {
         })
             .then(res => res.json())
             .then(data => {
-                alert('License Member information add Successfully')
+                toast.success('License Member information add Successfully');
+                reset();
+                licenseMemberRefetch();
             })
             .catch(error=>{
-                alert('License Member is not a successfully')
+                toast.error('License Member is not a successfully')
             })
     }
     return (
@@ -79,8 +84,8 @@ const LicenseMemberPage = () => {
                     </div>
 
                     <div class="flex justify-end mt-6">
-                        <button type='submit' className="px-6 py-2 leading-5 text-black transition-colors duration-200 transform bg-pink-500 rounded-md hover:bg-pink-700 focus:outline-none focus:bg-gray-600">Submit</button>
-                    </div>
+                    <button type='submit' className="px-6 py-2 leading-5 transition-colors duration-200 transform bg-black rounded-md hover:bg-[#C60017] focus:outline-none text-white">Submit</button>
+                </div>
                 </form>
             </section>
 
@@ -88,4 +93,4 @@ const LicenseMemberPage = () => {
     );
 };
 
-export default LicenseMemberPage;
+export default AddLicenseMemberPage;

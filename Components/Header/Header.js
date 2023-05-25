@@ -65,7 +65,7 @@ const Header = () => {
           <div className='hidden md:block mr-10'>
             <h1>Call Us</h1>
             {
-              userProfile[0]?.phone ? <h1 className='font-semibold'>{userProfile[0]?.phone}</h1> : <h1 className='font-semibold'>+8801852405780</h1>
+              userProfile[0]?.phone ? <h1 className='font-semibold'>{userProfile[0]?.phone}</h1> : <h1 className='font-semibold'>971523496967</h1>
             }
 
           </div>

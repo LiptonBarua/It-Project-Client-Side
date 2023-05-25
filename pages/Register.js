@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const Register = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -39,12 +40,12 @@ const Register = () => {
                             updateUser(userInfo)
                                 .then(() => {
                                     saveUser(data?.firstName, data.lastName, data?.email, imageData.data.url)
-                                    // alert('Register Successfully');
+                                    toast.success('Register Successfully');
                                     router.replace('/')
                                     reset()
                                 })
                                 .catch(error => {
-                                    console.error(error)
+                                    toast.error('Register Is Not a Successfully')
                                 })
                                 .catch(error => {
                                     setSignUpError(error.message)
@@ -69,7 +70,7 @@ const Register = () => {
                 .then(res => res.json())
                 .then(data => {
                     setCreatedUserEmail(email);
-
+                    
                 })
 
         }

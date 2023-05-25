@@ -77,7 +77,7 @@ const Footer = () => {
                         </svg>
                         </a>
                         {
-                            userProfile[0]?.phone? <p className=" text-sm text-white">{userProfile[0]?.phone}</p> : <p className=" text-sm text-white">+8801852405780</p>
+                            userProfile[0]?.phone? <p className=" text-sm text-white">{userProfile[0]?.phone}</p> : <p className=" text-sm text-white">971523496967</p>
                         }
 
                     </div>

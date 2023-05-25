@@ -1,14 +1,19 @@
 
+import AddAddress from '@/Components/AddInformation/AddAddress/AddAddress';
 import AddInformationPage from '@/Components/AddInformation/AddInformationPage/AddInformationPage';
-import LicenseMemberPage from '@/Components/AddInformation/LicenseMemberPage/LicenseMemberPage';
+import AddLicenseActivitesPage from '@/Components/AddInformation/AddLicenseActivitesPage/AddLicenseActivitesPage';
+import AddLicenseMemberPage from '@/Components/AddInformation/AddLicenseMemberPage/AddLicenseMemberPage';
 import { PrivateRoute } from '@/Components/PrivateRoute/PrivateRoute';
 import React from 'react';
 
 const AddInformation = () => {
+
     return (
-        <div>
+        <div className='px-[20px] lg:px-0'>
             <AddInformationPage></AddInformationPage>
-            <LicenseMemberPage></LicenseMemberPage>
+            <AddLicenseMemberPage></AddLicenseMemberPage>
+            <AddLicenseActivitesPage></AddLicenseActivitesPage>
+            <AddAddress></AddAddress>
         </div>
     );
 };

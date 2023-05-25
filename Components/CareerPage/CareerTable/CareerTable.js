@@ -4,8 +4,7 @@ import React, { useContext } from 'react';
 import CareerTables from './CareerTables';
 
 const CareerTable = () => {
-    const { userInformation } = useContext(ShareContext);
-    console.log(userInformation)
+    const { userPersonalInformation } = useContext(ShareContext);
     return (
         <div className='px-[20px] md:px-[52px]'>
             
@@ -14,7 +13,7 @@ const CareerTable = () => {
             <div>
 
                 {
-                    userInformation?.map(userData => <CareerTables key={userData._id} userData={userData}></CareerTables>)
+                    userPersonalInformation?.map(userData => <CareerTables key={userData._id} userData={userData}></CareerTables>)
                 }
             </div>
            </div>

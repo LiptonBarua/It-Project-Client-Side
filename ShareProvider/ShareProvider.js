@@ -17,13 +17,13 @@ queryFn: async()=>{
 }
 })
 
-// .................My Information................
+// .................Personal Information................
 
 
-const{data:userInformation=[]}=useQuery({
- queryKey: ['informationData'],
+const{data:userPersonalInformation=[], refetch:personalInformationRefetch}=useQuery({
+ queryKey: ['personalInformationData'],
  queryFn: async()=>{
-    const res= await fetch('https://it-project-server-side.vercel.app/information')
+    const res= await fetch('https://it-project-server-side.vercel.app/personalInformation')
     const data=res.json();
     return data;
  }
@@ -33,16 +33,38 @@ const{data:userInformation=[]}=useQuery({
 // .....................License Members Information...............
 
 
-const {data:licenseMemberInformation=[]}=useQuery({
+const {data:licenseMemberInformation=[], refetch:licenseMemberRefetch}=useQuery({
     queryKey: ['licenseMemberData'],
     queryFn: async()=>{
         const res=await fetch('https://it-project-server-side.vercel.app/licensemember')
-        const data=res.json();
+        const data=await res.json();
         return data;
     }
 })
 
-    const shareInfo = {userProfile, userInformation, licenseMemberInformation}
+
+// ............Informtion.............................
+
+const{data:userInformation=[], refetch:informationRefetch}=useQuery({
+    queryKey: ['informationData'],
+    queryFn: async ()=>{
+        const res=await fetch('https://it-project-server-side.vercel.app/information')
+        const data=await res.json();
+        return data
+    }
+
+})
+
+
+const{data:userAddress=[], refetch:addressRefetch}=useQuery({
+    queryKey: ['addressData'],
+    queryFn: async()=>{
+        const res= await fetch('https://it-project-server-side.vercel.app/address')
+        const data=await res.json();
+        return data;
+    }
+})
+    const shareInfo = {userProfile, userInformation, informationRefetch, userPersonalInformation, personalInformationRefetch, licenseMemberInformation, licenseMemberRefetch, userAddress, addressRefetch}
     return (
         <ShareContext.Provider value={shareInfo}>
             {children}

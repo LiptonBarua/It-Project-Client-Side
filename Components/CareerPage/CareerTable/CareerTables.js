@@ -10,7 +10,7 @@ const CareerTables = ({userData}) => {
 <div className="relative overflow-x-auto shadow-md hidden lg:block my-12">
     <table className="w-full text-sm text-left text-gray-900 dark:text-gray-400">
       
-        <tbody className="text-xs uppercase bg-[#e5dede] dark:text-white">
+        <tbody className="text-md bg-[#e5dede]">
             <tr className="">
                 <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     License No.

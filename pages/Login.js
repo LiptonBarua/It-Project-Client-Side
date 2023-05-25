@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const Login = () => {
     const { register, handleSubmit, formState: { errors }, reset} = useForm();
@@ -14,11 +15,12 @@ const Login = () => {
      .then(result=>{
         const user=result.user;
         router.replace('/')
+        toast.success('Login Successfully')
         reset();
      })
-     .catch(error=>{
-        alert('Login is not a Successfully')
-     })
+     .catch(error => {
+        toast.error('Login is Not a Successfully')
+    })
     }
     return (
         <section className="bg-[#212121] dark:bg-gray-900 py-36" style={{backgroundImage: `url(https://c0.wallpaperflare.com/preview/762/377/314/apple-computer-desk-electronics.jpg)`, backgroundRepeat: `no-repeat`, backgroundSize: `cover`}}>

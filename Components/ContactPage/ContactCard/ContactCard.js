@@ -34,7 +34,7 @@ const{userProfile }=useContext(ShareContext)
                     <div className='text-white'>
                     <h2 className='text-2xl font-bold mb-3'>Phone</h2>
                     {
-                        userProfile[0]?.phone? <p>{userProfile[0]?.phone}</p> : <p>+8801852405780</p>
+                        userProfile[0]?.phone? <p>{userProfile[0]?.phone}</p> : <p>971523496967</p>
                     }
                
                     </div>

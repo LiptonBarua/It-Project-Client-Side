@@ -2,6 +2,7 @@ import { AuthContext } from '@/AuthProvider/AuthProvider';
 import { ShareContext } from '@/ShareProvider/ShareProvider';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const ProfileEdit = () => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -46,8 +47,11 @@ const ProfileEdit = () => {
          )
          .then(res=>res.json())
          .then(data=>{
-            alert('profile edit successfully')
+            toast.success('profile edit successfully')
             reset()
+         })
+         .catch(error=>{
+            toast.error('profile edit not a successfully')
          })
      }
     //  console.log(editProfile)
@@ -97,12 +101,6 @@ const ProfileEdit = () => {
                             </div>
                         </div>
 
-                        {/* <div className="flex justify-center m-2 ">
-            <ion-icon name="logo-facebook" className="m-2 text-pink-500 hover:text-white"></ion-icon>
-            <ion-icon name="logo-linkedin" className="m-2 text-pink-500 hover:text-white"></ion-icon>
-            <ion-icon name="logo-twitter" className="m-2 text-pink-500 hover:text-white"></ion-icon>
-            <ion-icon name="logo-reddit" className="m-2 text-pink-500 hover:text-white"></ion-icon>
-        </div> */}
 
                     </div>
                     <div className="lg:w-2/3 ">
@@ -113,7 +111,7 @@ const ProfileEdit = () => {
                             <div className="m-6">
                                 <p className="text-sm text-[black]">First Name</p>
                                 <div className="form-control w-full">
-                                    <input placeholder='' type="text" {...register("firstName", { required: "First Name is required" })} className="border-b-2 border-[black] text-[black] w-36" />
+                                    <input placeholder='' type="text" {...register("firstName", { required: "First Name is required" })} className="border-b-2 border-[black] text-[black] w-80 lg:w-36" />
                                     {errors.firstName && <p className='text-red-600'>{errors.firstName?.message}</p>}
                                 </div>
 
@@ -127,12 +125,12 @@ const ProfileEdit = () => {
                             <div className="m-6 ">
                                 <p className="text-sm text-[black]">Last Name</p> 
                                 <div className="form-control w-full">
-                                    <input placeholder='' type="text" {...register("lastName", { required: "Last Name is required" })} className="border-b-2 border-[black] text-[black] w-36" />
+                                    <input placeholder='' type="text" {...register("lastName", { required: "Last Name is required" })} className="border-b-2 border-[black] text-[black] w-80 lg:w-36" />
                                     {errors.lastName && <p className='text-red-600'>{errors.lastName?.message}</p>}
                                 </div>
                                 <p className="text-sm text-[black] mt-6">Phone</p> 
                                 <div className="form-control w-full">
-                                    <input placeholder='' type="number" {...register("phone", { required: "Phone Name is required" })} className="border-b-2 border-[black] text-[black] w-36" />
+                                    <input placeholder='' type="number" {...register("phone", { required: "Phone Name is required" })} className="border-b-2 border-[black] text-[black] w-80 lg:w-36" />
                                     {errors.phone && <p className='text-red-600'>{errors.phone?.message}</p>}
                                 </div>
                             </div>
@@ -148,11 +146,7 @@ const ProfileEdit = () => {
                          </div>
                      </div>
                         <div className="m-6 items-end ">
-                            {/* <p className="text-sm text-[black] mt-6 ">E-mail</p> 
-                            <div className="form-control w-full">
-                                    <input placeholder='' type="email"  defaultValue={user?.email} readOnly {...register("email", { required: "Email is required" })} className="border-b-2 border-[black] text-[black] w-80" />
-                                    {errors.email && <p className='text-red-600'>{errors.email?.message}</p>}
-                                </div> */}
+                   
                             <div className=" flex ">
                             <button type="submit" className="my-4 mt-6 pl-4 pt-1 pb-1 pr-4 bg-[#C60017] rounded text-white font-medium w-36 " style={{ transitionDuration: `1s` }}>Edit Profile</button>
 
