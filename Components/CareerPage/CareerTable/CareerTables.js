@@ -7,18 +7,18 @@ const CareerTables = ({userData}) => {
             
             {/* .............Large Device............... */}
 
-<div className="relative overflow-x-auto shadow-md hidden lg:block">
+<div className="relative overflow-x-auto shadow-md hidden lg:block my-12">
     <table className="w-full text-sm text-left text-gray-900 dark:text-gray-400">
       
         <tbody className="text-xs uppercase bg-[#e5dede] dark:text-white">
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     License No.
                 </th>
                 <td className="px-6 py-4">
                     {licenseNo}
                 </td>
-                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     Issue Date
                 </td>
                 <td className="px-6 py-4">
@@ -27,13 +27,13 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     Trade Name.
                 </th>
                 <td className="px-6 py-4">
                     {tradeName}
                 </td>
-                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    Main License No.
                 </td>
                 <td className="px-6 py-4">
@@ -42,13 +42,13 @@ const CareerTables = ({userData}) => {
            
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     Legal Type
                 </th>
                 <td className="px-6 py-4">
                    {legalType}
                 </td>
-                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    Register No.
                 </td>
                 <td className="px-6 py-4">
@@ -57,13 +57,13 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    Expiry Date.
                 </th>
                 <td className="px-6 py-4">
                     {expiryDate}
                 </td>
-                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     DCCI No.
                 </td>
                 <td className="px-6 py-4">
@@ -72,13 +72,13 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                 D&B D-U-N-S
                 </th>
                 <td className="px-6 py-4">
                     {dbduns}
                 </td>
-                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                   
                 </td>
                 <td className="px-6 py-4">
@@ -93,12 +93,12 @@ const CareerTables = ({userData}) => {
 
 {/* .............Small Device............... */}
 
-<div className="relative overflow-x-auto shadow-md blog lg:hidden">
+<div className="relative overflow-x-auto shadow-md blog lg:hidden  my-12">
     <table className="w-full text-sm text-left text-gray-900 dark:text-gray-400">
       
-        <tbody className="text-xs uppercase bg-[#e5dede] dark:text-white">
+        <tbody className="text-xs uppercase bg-[#e5dede]">
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     License No.
                 </th>
                 <td className="px-6 py-4">
@@ -108,7 +108,7 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     Trade Name.
                 </th>
                 <td className="px-6 py-4">
@@ -118,7 +118,7 @@ const CareerTables = ({userData}) => {
            
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     Legal Type
                 </th>
                 <td className="px-6 py-4">
@@ -128,7 +128,7 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    Expiry Date.
                 </th>
                 <td className="px-6 py-4">
@@ -136,7 +136,7 @@ const CareerTables = ({userData}) => {
                 </td>
             </tr>
             <tr className="">
-                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                 D&B D-U-N-S
                 </th>
                 <td className="px-6 py-4">
@@ -146,7 +146,7 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-            <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                     Issue Date
                 </td>
                 <td className="px-6 py-4">
@@ -156,7 +156,7 @@ const CareerTables = ({userData}) => {
              
             </tr>
             <tr className="">
-            <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    Main License No.
                 </td>
                 <td className="px-6 py-4">
@@ -164,7 +164,7 @@ const CareerTables = ({userData}) => {
                 </td>
             </tr>
             <tr className="">
-            <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    Register No.
                 </td>
                 <td className="px-6 py-4">
@@ -172,7 +172,7 @@ const CareerTables = ({userData}) => {
                 </td>
             </tr>
             <tr className="">
-            <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <td className="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">
                    DCCI No.
                 </td>
                 <td className="px-6 py-4">

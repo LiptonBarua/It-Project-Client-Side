@@ -9,10 +9,8 @@ const CareerTable = () => {
     return (
         <div className='px-[20px] md:px-[52px]'>
             
-           <div className='my-6'>
-           <div className='text-center bg-[#340110] text-white py-2 text-xl font-semibold'>
-                <h1>License Details</h1>
-            </div>
+           <div className='mb-6'>
+        
             <div>
 
                 {

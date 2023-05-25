@@ -29,7 +29,20 @@ const{data:userInformation=[]}=useQuery({
  }
 })
 
-    const shareInfo = {userProfile, userInformation}
+
+// .....................License Members Information...............
+
+
+const {data:licenseMemberInformation=[]}=useQuery({
+    queryKey: ['licenseMemberData'],
+    queryFn: async()=>{
+        const res=await fetch('https://it-project-server-side.vercel.app/licensemember')
+        const data=res.json();
+        return data;
+    }
+})
+
+    const shareInfo = {userProfile, userInformation, licenseMemberInformation}
     return (
         <ShareContext.Provider value={shareInfo}>
             {children}
