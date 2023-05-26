@@ -46,7 +46,7 @@ const Header = () => {
         user?.email ? <li onClick={()=>{handleLogOut(); setNavbar(!navbar)}}><Link href='' className='text-[#340110] font-bold relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Log Out</Link></li>
           :
           <>
-            <li onClick={() => setNavbar(!navbar)}><Link href='/Login' className='relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Login</Link></li>
+            <li onClick={() => setNavbar(!navbar)}><Link href='/Login' className='text-[#340110] font-bold relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Login</Link></li>
             <li onClick={() => setNavbar(!navbar)}><Link href='/Register' className='text-[#340110] font-bold relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-[#C40017] before:transition hover:before:scale-100' style={{ transitionDuration: `6s` }}>Register</Link></li>
           </>
       }
