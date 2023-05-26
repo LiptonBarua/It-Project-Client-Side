@@ -57,8 +57,14 @@ const Header = () => {
     <div className='fixed bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef]  dark:bg-dark bg-opacity-30 shadow-md  z-50 w-full bg-white py-6 px-[20px] md:px-[80px]  right-0 top-0'>
       <div className=" flex justify-between">
         <div className="navbar-start">
+         <Link href='/'>
+         <div>
+          <h1 className='font-bold text-xl lg:text-3xl text-[#340110]'>NOUR ALKHOR</h1>
+          <p className='text-sm'>Information Technology Co.</p>
+          </div>
+         </Link>
 
-          <Link href='/' className=" text-orange-500 font-bold"> <img className='w-[160px] md:w-80' src="https://www.itsolutions.ae/images/itsolutionslogo.svg" alt="" /></Link>
+          {/* <Link href='/' className=" text-orange-500 font-bold"> <img className='w-[160px] md:w-80' src="https://www.itsolutions.ae/images/itsolutionslogo.svg" alt="" /></Link> */}
         </div>
 
         <div className='flex'>

@@ -25,16 +25,11 @@ const Card = () => {
         },  
         {
             _id: '5',
-            img: 'https://www.itsolutions.ae/images/its.png',
-            title: 'Audio Visual'
-        },  
-        {
-            _id: '6',
             img: 'https://www.itsolutions.ae/images/tlp1.png',
             title: 'Telecom Products'
         },  
         {
-            _id: '7',
+            _id: '6',
             img: 'https://www.itsolutions.ae/images/ws.png',
             title: 'Website Solution'
         },  
@@ -43,7 +38,7 @@ const Card = () => {
         <div className='px-[20px] md:px-[40px] bg-gradient-to-r from-[#5D151D] to-[#C40017]'>
 
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-20'>
                 {
                     cards.map(card=><CardData key={card._id} card={card}></CardData>)
                 }
