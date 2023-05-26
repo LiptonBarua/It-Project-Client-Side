@@ -30,8 +30,8 @@ const AddAddress = () => {
             .then(res => res.json())
             .then(data => {
                 toast.success('Address submit successfully')
-                reset()
-                addressRefetch()
+                reset();
+                addressRefetch();
             })
             .catch(error=>{
                 toast.error('Address not a submit successfully')

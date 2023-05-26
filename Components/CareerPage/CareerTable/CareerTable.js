@@ -5,16 +5,17 @@ import CareerTables from './CareerTables';
 import { toast } from 'react-toastify';
 
 const CareerTable = () => {
-    const { userPersonalInformation } = useContext(ShareContext);
+    const { userPersonalInformation, personalInformationRefetch} = useContext(ShareContext);
 
     const handleLicenceDetailsDelete=(id)=>{
-        fetch(`http://localhost:5000/personalInformation/${id}`, {
+        fetch(`https://it-project-server-side.vercel.app/personalInformation/${id}`, {
             method: 'DELETE'
         })
      .then(res=>res.json())
      .then(data=>{
         if(data.deletedCount > 0){
             toast.success(` deleted Successfully`)
+            personalInformationRefetch()
         }
      })
      .catch(error=>{
