@@ -70,10 +70,7 @@ const Header = () => {
         <div className='flex'>
           <div className='hidden md:block mr-10'>
             <h1>Call Us</h1>
-            {
-              userProfile[0]?.phone ? <h1 className='font-semibold'>{userProfile[0]?.phone}</h1> : <h1 className='font-semibold'>971523496967</h1>
-            }
-
+            <h1 className='font-semibold'>971523496967</h1>
           </div>
           <div className="dropdown">
             <label onClick={() => { setDrop(!drop); setNavbar(!navbar) }} tabIndex={0} className="">
@@ -93,7 +90,7 @@ const Header = () => {
           
             {
               drop && (
-                <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact -right-10 md:-right-24 dropdown-content mt-6 md:mt-12 pb-5 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-60">
+                <ul onClick={() => setDrop(!drop)} tabIndex={0} className="flex menu menu-compact -right-10 md:-right-24 dropdown-content mt-10 md:mt-12 pb-5 shadow bg-gradient-to-r from-[#f5f0ef] via-[#f5f0ef] to-[#f5f0ef] w-60">
                 {navitem}
               </ul>
                
