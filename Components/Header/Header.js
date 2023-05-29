@@ -22,7 +22,7 @@ const Header = () => {
       {
         user?.email ? <li onClick={() => setNavbar(!navbar)}>
         <Link href='/Profile'>
-        <div className="border-b-2 border-gray-400 mb-3 w-full flex items-center p-2 space-x-4">
+        <div className="border-b-2 border-gray-400 mb-3 w-full flex p-2 space-x-4">
             <img src={userProfile[0]?.image} alt="" className="w-12 h-12 rounded-full" />
             <div>
               <h2 className="text-lg font-semibold text-[#340110]">{userProfile[0]?.firstName} {userProfile[0]?.lastName}</h2>

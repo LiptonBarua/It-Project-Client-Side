@@ -10,7 +10,7 @@ const BlogData = ({ blog }) => {
         <div data-aos="fade-left">
 
 
-            <div className="bg-white h-[460px] relative group  border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg">
+            <div className="bg-white h-[475px] relative group  border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg">
 
                 <div className=" overflow-hidden">
 
@@ -32,8 +32,9 @@ const BlogData = ({ blog }) => {
                    <div className='p-4'>
                    <h1 className='text-xl font-bold'>{blog.title}</h1>
                     <p className='mt-3'>{blog.details}</p>
-                    <Link href='' className="py-2 bg-[#C40017] bg-clip-text text-transparent font-medium no-underline transform hover:scale-105">Read more</Link>
+                  
                    </div>
+                   <Link href='' className="px-4 mb-10 bg-[#C40017] bg-clip-text text-transparent font-medium no-underline transform hover:scale-105">Read more</Link>
                 </div>
 
 
