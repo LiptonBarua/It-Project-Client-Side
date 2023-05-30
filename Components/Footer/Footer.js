@@ -70,9 +70,7 @@ const Footer = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                         </svg></a>
 
-                        {
-                            userProfile[0]?.location ? <p className=" text-sm text-white">{userProfile[0]?.location}</p> : <p className=" text-sm text-white">Shop No. G16 & G17, Ground Floor, Platinum Tower, Cluster I,Jumeirah Lakes Tower, Dubai, UAE</p>
-                        }
+                        <p className=" text-sm text-white">Shop No. G16 & G17, Ground Floor, Platinum Tower, Cluster I,Jumeirah Lakes Tower, Dubai, UAE</p>
                     </div>
                     <div className='flex items-center'>
                         <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-white mr-3">
@@ -86,10 +84,7 @@ const Footer = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                         </svg>
                         </a>
-                        {
-                            userProfile[0]?.email ? <p className=" text-sm text-white">{userProfile[0]?.email}</p> : <p className=" text-sm text-white">info@itsolutions.ae</p>
-                        }
-
+                        <p className=" text-sm text-white">mdnoor1987noor@gmail.com</p>
                     </div>
 
                     <div>

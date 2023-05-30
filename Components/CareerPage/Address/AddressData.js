@@ -17,49 +17,49 @@ const AddressData = ({ userAddress, handleAddressDelete }) => {
 
                     <tbody>
                         <tr className="">
-                            <td scope="row" className="px-6 py-4">
+                            <td scope="row" className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
                                 Phone No.
                             </td>
                             <td className="px-6 py-4">
                                 {phone}
                             </td>
-                            <td className="px-6 py-4">
-                                P.O.Box
+                            <td className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
+                                P.O.Box.
                             </td>
                             <td className="px-6 py-4">
 
                             </td>
                         </tr>
                         <tr className="">
-                            <td scope="row" className="px-6 py-4">
+                            <td scope="row" className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
                                 Fax No.
                             </td>
                             <td className="px-6 py-4">
 
                             </td>
-                            <td className="px-6 py-4">
-                                Parcel ID
+                            <td className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
+                                Parcel ID.
                             </td>
                             <td className="px-6 py-4">
                                 {parcel}
                             </td>
                         </tr>
                         <tr className=" dark:bg-gray-800">
-                            <td scope="row" className="px-6 py-4">
+                            <td scope="row" className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
                                 Mobile No.
                             </td>
                             <td className="px-6 py-4">
                                 {mobile}
                             </td>
-                            <td className="px-6 py-4">
-                                Email:
+                            <td className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
+                                Email.
                             </td>
                             <td className="px-6 py-4">
                                 {email}
                             </td>
                         </tr>
                         <tr className=" dark:bg-gray-800">
-                            <td scope="row" className="px-6 py-4">
+                            <td scope="row" className="px-6 py-4 font-bold text-black whitespace-nowrap dark:text-white">
                                 Receipt No.
                             </td>
                             <td className="px-6 py-4">
@@ -117,7 +117,7 @@ const AddressData = ({ userAddress, handleAddressDelete }) => {
                         </tr>
                         <tr className="">
                             <td scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
-                                P.O.Box
+                                P.O.Box.
                             </td>
                             <td className="px-6 py-4">
 
@@ -126,7 +126,7 @@ const AddressData = ({ userAddress, handleAddressDelete }) => {
                         </tr>
                         <tr className="">
                             <td scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
-                                Parcel ID
+                                Parcel ID.
                             </td>
                             <td className="px-6 py-4">
                                 {parcel}
@@ -135,7 +135,7 @@ const AddressData = ({ userAddress, handleAddressDelete }) => {
                         </tr>
                         <tr className="">
                             <td scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
-                                Email
+                                Email.
                             </td>
                             <td className="px-6 py-4">
                                 {email}
@@ -154,7 +154,7 @@ const AddressData = ({ userAddress, handleAddressDelete }) => {
 
                         <tr className="bg-[#e5dede]">
                             <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
-                                Action
+                                Action.
                             </th>
                             <td className="px-6 py-4">
                                 <button onClick={() =>handleAddressDelete(licenseMember._id)} className='font-medium text-blue-600 dark:text-blue-500 hover:underline'><svg xmlns="http://www.w3.org/2000/svg" className="text-[#340110] h-7 w-7 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
