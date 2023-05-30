@@ -8,15 +8,15 @@ const Footer = () => {
         <>
             <li><Link href='/' className=' hover:text-[black]'>Home</Link></li>
             <li><Link href='/About' className=' hover:text-[black]'>About Us</Link></li>
-            <li><Link href='/Blog' className=' hover:text-[black]'>Blogs</Link></li>
-            <li><Link href='/Career' className=' hover:text-[black]'>My Information</Link></li>
+            <li><Link href='/Blog' className=' hover:text-[black]'>Blog</Link></li>
+            <li><Link href='/Career' className=' hover:text-[black]'>Information</Link></li>
             <li><Link href='/Contact' className=' hover:text-[black]'>Contact Us</Link></li>
             <li><Link href='/Profile' className=' hover:text-[black]'>My Profile</Link></li>
         </>
     )
 
     return (
-        <div className=" px-[20px] md:px-[40px]" style={{ backgroundImage: `url(https://www.itsolutions.ae/images/footer-bg.png)`, backgroundRepeat: `no-repeat`, backgroundSize: `cover` }}>
+        <div className=" px-[20px] md:px-[40px] bg-[#340110]" style={{ backgroundImage: `url(https://www.itsolutions.ae/images/footer-bg.png)`, backgroundRepeat: `no-repeat`, backgroundSize: `cover` }}>
             <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 items-center">
                 <div className="sm:col-span-2">
 

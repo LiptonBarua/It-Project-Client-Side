@@ -106,7 +106,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
       
         <tbody className="text-md">
             <tr className="text-md">
-                <th scope="row" className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                <th scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                     License No.
                 </th>
                 <td className="px-6 py-4">
@@ -116,7 +116,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
              
             </tr>
             <tr className="text-md">
-                <th scope="row" className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                <th scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                     Trade Name.
                 </th>
                 <td className="px-6 py-4">
@@ -126,7 +126,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
            
             </tr>
             <tr className="text-md">
-                <th scope="row" className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                <th scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                     Legal Type
                 </th>
                 <td className="px-6 py-4">
@@ -136,7 +136,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
              
             </tr>
             <tr className="text-md">
-                <th scope="row" className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                <th scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                    Expiry Date.
                 </th>
                 <td className="px-6 py-4">
@@ -144,7 +144,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
                 </td>
             </tr>
             <tr className="text-md">
-                <th scope="row" className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                <th scope="row" className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                 D&B D-U-N-S
                 </th>
                 <td className="px-6 py-4">
@@ -154,7 +154,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
              
             </tr>
             <tr className="text-md">
-            <td className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+            <td className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                     Issue Date
                 </td>
                 <td className="px-6 py-4">
@@ -164,7 +164,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
              
             </tr>
             <tr className="text-md">
-            <td className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+            <td className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                    Main License No.
                 </td>
                 <td className="px-6 py-4">
@@ -172,7 +172,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
                 </td>
             </tr>
             <tr className="text-md">
-            <td className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+            <td className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                    Register No.
                 </td>
                 <td className="px-6 py-4">
@@ -180,7 +180,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
                 </td>
             </tr>
             <tr className="text-md">
-            <td className="bg-[#340110] w-20 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+            <td className="bg-[#340110] w-20 md:w-80 lg:w-0 px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
                    DCCI No.
                 </td>
                 <td className="px-6 py-4">
@@ -189,7 +189,7 @@ const CareerTables = ({userData, handleLicenceDetailsDelete}) => {
             </tr>
 
             <tr className="bg-[#e5dede]">
-                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                            <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                 Action
                             </th>
                             <td className="px-6 py-4">

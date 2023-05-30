@@ -100,7 +100,7 @@ const LicenseMember = () => {
 
                                     <tbody>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                                            <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                                 Share
                                             </th>
                                             <td className="px-6 py-4">
@@ -108,7 +108,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                                            <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                                 Role
                                             </th>
                                             <td className="px-6 py-4">
@@ -116,7 +116,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                                            <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                                 Nationality
                                             </th>
                                             <td className="px-6 py-4">
@@ -124,7 +124,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="w-20  bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                                            <th scope="row" className="w-20 md:w-80 lg:w-0  bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                                 Name
                                             </th>
                                             <td className="px-6 py-4 uppercase">
@@ -132,7 +132,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                                            <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                                 No
                                             </th>
                                             <td className="px-6 py-4">
@@ -140,7 +140,7 @@ const LicenseMember = () => {
                                             </td>
                                         </tr>
                                         <tr className="bg-[#e5dede]">
-                                            <th scope="row" className="w-20 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
+                                            <th scope="row" className="w-20 md:w-80 lg:w-0 bg-[#340110] px-6 py-4 text-white blackspace-nowrap dark:text-black">
                                                 Action
                                             </th>
                                             <td className="px-6 py-4">

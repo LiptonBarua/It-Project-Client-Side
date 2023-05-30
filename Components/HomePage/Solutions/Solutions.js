@@ -3,7 +3,7 @@ import React from 'react';
 
 const Solutions = () => {
     return (
-        <div className="px-[20px] md:px-[40px] hero min-h-screen" style={{ backgroundImage: `url(https://www.itsolutions.ae/images/about-bg.png)`, backgroundRepeat: `no-repeat`, backgroundSize: `cover` }}>
+        <div className="px-[20px] md:px-[40px] hero min-h-screen" style={{ backgroundImage: `url(https://www.itsolutions.ae/images/about-bg.png)`, backgroundRepeat: `no-repeat`, backgroundSize: `cover`, flexWrap: `wrap-reverse` }}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white">
                 <div>
                     <h1 className='text-3xl md:text-6xl font-bold'>The solutions we design The solutions you need</h1>
