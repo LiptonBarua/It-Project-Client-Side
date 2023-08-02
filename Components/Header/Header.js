@@ -70,7 +70,7 @@ const Header = () => {
         <div className='flex'>
           <div className='hidden md:block mr-10'>
             <h1 className='text-[#340110]'>Call Us</h1>
-            <h1 className='font-semibold text-[#340110]text-[#340110] font-bold '>971523496967</h1>
+            <h1 className='font-semibold text-[#340110]text-[#340110] font-bold '>+97143968561</h1>
           </div>
           <div className="dropdown">
             <label onClick={() => { setDrop(!drop); setNavbar(!navbar) }} tabIndex={0} className="">
