@@ -25,7 +25,7 @@ useEffect(() => {
                     <p className=" text-sm text-white">Al Quasis, Coastal Plaza 218</p>
                     </div>
                 </div>
-                <div data-aos="fade-left" className='bg-[#C60017] hover:bg-black text-center p-6' style={{transitionDuration: `2s`}}>
+                <div data-aos="fade-right" className='bg-[#C60017] hover:bg-black text-center p-6' style={{transitionDuration: `2s`}}>
                     <h1><HiOutlineMailOpen className=' mx-auto w-14 h-14 text-white hover:text-black'></HiOutlineMailOpen></h1>
                     <div className='text-white'>
                     <h2 className='text-2xl font-bold mb-3'>Email</h2>
