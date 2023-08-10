@@ -1,13 +1,21 @@
 import Aos from 'aos';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const BlogData = ({ blog }) => {
     useEffect(() => {
-        Aos.init();
-      }, [])
+        AOS.init({
+          duration: 800,
+          offset: 200, 
+          easing: 'ease-in-out',
+        });
+      }, []);
+
+
     return (
-        <div data-aos="fade-left">
+        <div data-aos="fade-right">
 
 
             <div className="bg-white h-[475px] relative group  border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg">
